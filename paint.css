@@ -1,0 +1,60 @@
+.shape, .color {
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+}
+.shape {
+    border: none;
+}
+#shape-picker, #color-picker, #hint, #keyboard {
+    margin: 20px;
+}
+svg {
+    touch-action: none;
+}
+svg, .tools {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+}
+.selected {
+    outline: 2px solid red; 
+    outline-offset: 3px;
+}
+.shape {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#tool-line {
+    background-image: url(Line.png);
+}
+#tool-circle {
+    background-image: url(Ellipse.png);
+}
+#tool-rectangle {
+    background-image: url(Rectangle.png);
+}
+#tool-pencil {
+    background-image: url(Pencil.png);
+}
+
+.hide {
+    display: none;
+}
+
+#keyboard .key {
+    height: 60px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+#keyboard .key.pressed {
+    background-color: lightgreen;
+}
+
+@media (hover: hover) or (pointer: fine) {
+    #keyboard{
+        display: none;
+    }
+}

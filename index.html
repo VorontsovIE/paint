@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="paint.css">
+    </head>
+    <body>
+        <svg id="canvas" width="800" height="600" viewBox="0 0 800 600"></svg>
+        
+        <div class="tools">
+            <div id="shape-picker">
+                <button class="shape selected" id="tool-line" data-shape="line" data-stroke="5"></button>
+                <button class="shape" id="tool-circle" data-shape="circle"></button>
+                <button class="shape" id="tool-rectangle" data-shape="rectangle" data-hint="Hold shift to draw square" data-enable-keyboard="true"></button>
+                <button class="shape" id="tool-pencil" data-shape="pencil"></button>
+            </div>
+            <div id="color-picker">
+                <button class="color selected" data-color="#000000"></button>
+                <button class="color" data-color="#ff0000"></button>
+                <button class="color" data-color="#00ff00"></button>
+                <button class="color" data-color="#0000ff"></button>
+                <button class="color" data-color="#ff00ff"></button>
+                <button class="color" data-color="#ffff00"></button>
+                <button class="color" data-color="#00ffff"></button>
+            </div>
+            <div id="keyboard" class="hide">
+                <button class="key" id="shiftButton">Shift</button>
+            </div>
+            <div id="hint"></div>
+        </div>
+    
+        <script src="paint.js"></script>
+    </body>
+</html>
